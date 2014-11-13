@@ -56,7 +56,7 @@ Claylump('x-test', {
 });
 ```
 
-## 今後の課題
+## 依存モジュール
 
 - [Matt-Esch/virtual-dom](https://github.com/Matt-Esch/virtual-dom)
 - [tautologistics/node-htmlparser](https://github.com/tautologistics/node-htmlparser)
