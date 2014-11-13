@@ -1,10 +1,10 @@
 # Claylump
 
-Claylump is a Web Components wrapper with Virtual DOM.
+Claylumpは仮想DOMを使ったWebコンポーネントのラッパーです。
 
-## Getting Started
+## はじめてみよう
 
-### Register element
+### 要素の登録
 
 ```html
 <template cl-element="x-test">
@@ -23,7 +23,7 @@ Claylump is a Web Components wrapper with Virtual DOM.
 </script>
 ```
 
-### Update DOM
+### DOMの更新
 
 ```javascript
 Claylump('x-test', {
@@ -40,7 +40,7 @@ Claylump('x-test', {
 });
 ```
 
-### Event delegation
+### イベントの割当て
 
 ```javascript
 Claylump('x-test', {
@@ -56,18 +56,18 @@ Claylump('x-test', {
 });
 ```
 
-## Dependencies
+## 今後の課題
 
 - [Matt-Esch/virtual-dom](https://github.com/Matt-Esch/virtual-dom)
 - [tautologistics/node-htmlparser](https://github.com/tautologistics/node-htmlparser)
 - [Polymer/platform](https://github.com/Polymer/platform)
 
-## TODO
+## 今後の課題
 
 - [ ] flux module
 - [ ] messaging b/w components
 
-## Current restriction
+## 現在の制限
 
-- Internet Explorer 10~ (using `Window#requestAnimationFrame`, `Element.matches`)
-- Cannot use inherit element like `is="x-child"` in `<template>`.
+- インターネットエクスプローラー10以降(`Window#requestAnimationFrame`, `Element.matches`を使用しているため)
+- `<template>`の`is="x-child"`等の継承された要素を使用することはできません。
